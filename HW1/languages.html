@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="stylesheet/languages.css">
+
+</head>
+<body style="background-color: #f1ecff;">
+    <div>
+    <body id="myheader">
+    <header>
+            <h1 id="main-title"> Programming Languages</h1>
+            <button id="homebutton" onclick="location.href='index.html'">Home</button>
+            <button id="hw1button" onclick="location.href='hardware.html'">Hardware</button>
+            <button id="opsysbutton" onclick="location.href='operatingsys.html'">Operating Systems</button>
+    </header>
+    </body>
+    </div>
+    <div class="main-description">
+            <p> A <b>Programming Language</b> is a formal language comprising a set of instructions that produce various kinds of output. 
+            Programming languages are used in computer programming to implement algorithms.
+            There is a difference between low level and high level programming languages. The high level languages are closer to human 
+            languages and easier to use, while low level languages are closer to machine code and more difficult to use.
+            As the matter of fact, during compile or interpretation, high level lamguages are translated into low level languages
+            and even sometimes directly into machine code. In the case of translated to a low languages, they act as intructions
+            for the CPU and this get translated or assembly into machine code which is the formal binary / logic code understood by the computer.</p>
+    </div>
+    <div>
+        <!-- Insert some code snippet or code screenshots-->
+         <pre id="samplecode"><code>
+    // Sample C++ code snippet for a simple card game
+    struct Card {
+    std::string rank;
+    std::string suit;
+    int value; // Blackjack value with Ace as 11 initially
+
+    std::string toString() const { return rank + suit; }
+    };
+
+    class Deck {
+    public:
+        Deck() { reset(); }
+
+        void reset() {
+            cards.clear();
+            const std::vector<std::string> suits = {"♠", "♥", "♦", "♣"};
+            const std::vector<std::string> ranks = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+
+            for (const auto& s : suits) {
+                for (const auto& r : ranks) {
+                    int v = 0;
+                    if (r == "A") v = 11;
+                    else if (r == "J" || r == "Q" || r == "K") v = 10;
+                    else v = std::stoi(r);
+                    cards.push_back(Card{r, s, v});
+                }
+            }
+        }
+    };
+         </code></pre>
+    </div>
+    <div class="main-description">
+        <!-- Explain C and the C-like programming languages-->
+         <p>C, created by Dennis Ritchie in the early 1970s at Bell Labs, was designed to write the Unix operating system efficiently and portably. 
+            By combining low-level memory access with high-level structure, C made it possible to write fast, portable system software. Its success led 
+            to widespread adoption, standardization, and enormous influence on later languages such as C++, Java, and many others. Today, C remains 
+            a foundational language at the core of operating systems, compilers, and performance-critical software.
+         </p>
+    </div>
+    <div>
+        <!-- add diagram on C derivatives, C++, Java, Python-->
+         <img src="images/clanguagesdiagram.gif" alt="C Derivatives Diagram" id="diagramimg">
+    </div>
+    <div class ="big-container">
+    <div class="container-for-ls bigBox">
+        <div class="box">
+            <img src="images/cpplogo.gif" alt="cpp-logo" width="auto" height="200">
+        </div>
+        <!-- explain C++ and add C++ logo-->
+        <div class="box">
+         <p class="language-description"> <b>C++</b>, created by Bjarne Stroustrup in the 1980s as <b>“C with Classes,”</b> extends C with abstraction mechanisms while preserving native performance. 
+            Built around the principle of zero-cost abstractions, <b>C++</b> enables high-level design without sacrificing speed or control. Its strengths lie in 
+            performance, resource management, and flexibility, making it the dominant language for game engines, systems software, and real-time applications. 
+            However, its complexity, steep learning curve, and memory safety risks make it challenging, especially for large teams without strong engineering
+            discipline.</p>
+        </div>
+        <div class="box msuses" style="background-color: lightblue;">
+            <h2>Most common uses of C++</h2>
+            <p><ul>
+                <li>Game Development</li>
+                <li>Systems Programming</li>
+                <li>Embedded Systems</li>
+                <li>High-Performance Applications</li>
+            </ul></p>
+        </div>
+    </div>
+    <div class="container-for-ls bigBox">
+        <div class="box">
+            <img src="images/Java_(programming_language)-Logo.wine.png" alt="java-logo" width="auto" height="200">
+        </div>
+        <div class="box">
+        <!-- explain Java and add Java logo-->
+         <p class="language-description"> <b>Java</b>, developed at Sun Microsystems in the 1990s, was designed to create portable, safe, and reliable software through the use of the <b>Java Virtual Machine</b>. 
+            By compiling to bytecode instead of native machine code, <b>Java</b> enabled cross-platform execution and strong runtime guarantees such as automatic memory management.
+            Its strengths lie in stability, performance at scale, and a massive ecosystem, making it a dominant choice for enterprise systems and backend services. 
+            While <b>Java</b> sacrifices low-level control and can be verbose, it excels in building large, maintainable, long-running applications.</p>
+        </div>
+        <div class="box msuses" style="background-color: gold;">
+            <h2>Most common uses of Java</h2>
+            <p><ul>
+                <li>Enterprise Applications</li>
+                <li>Android Development</li>
+                <li>Web Applications</li>
+                <li>Big Data and Analytics</li>
+            </ul></p>
+        </div>    
+    </div>
+    <div class="container-for-ls bigBox">
+        <div class="box">
+            <img src="images/Python_logo_01.svg.png" alt="python-logo" width="125" height="125">
+        </div>
+        <div class="box">
+        <!-- explain Python and add Python logo-->
+         <p class="language-description"> <b>Python</b>, created by Guido van Rossum in the early 1990s, is a high-level programming language designed around readability and developer productivity. By emphasizing 
+            clear syntax, dynamic typing, and a rich standard library, <b>Python</b> enables rapid development across domains such as web services, automation, data science, and artificial 
+            intelligence. While <b>Python</b> sacrifices raw performance and low-level control, its vast ecosystem—often powered by <b>C</b> and <b>C++</b> extensions—makes it one of the most versatile and
+            widely used languages in modern computing.
+         </p>
+        </div>
+        <div class="box msuses" style="background-color: yellow;">
+            <h2>Most common uses of Python</h2>
+            <p><ul>
+                <li>Web Development</li>
+                <li>Data Science and Machine Learning</li>
+                <li>Automation and Scripting</li>
+                <li>Scientific Computing</li>
+            </ul></p>
+        </div>
+    </div>
+    </div>
+    <section class="sources">
+        <h2 class="subtitle">Sources</h2>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Programming_language" target="_blank" rel="noopener">Programming language source</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" rel="noopener">C++ source</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" rel="noopener">Java source</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank" rel="noopener">Python source</a></li>
+        </ul>
+    </section>
+    <div>
+        <footer>
+            <img src="images/CSUMB_wordmark_color.png" alt="csumb-logo" width="auto" height="100">
+            <p>Website created by Serrano Acevedo. Meant to be use only for educational purposes.
+                CSU Monterey Bay, School of Computing and Design, CST 366 - Internet Programming. Spring 2026
+                &copy;CSUMB 2026.
+
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+#main-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    color: white;
+
+}
+#samplecode {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+    width: 80%;
+    margin: 20px auto;
+}
+#diagramimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: auto;
+    
+}
+.container-for-ls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding: 20px;
+    background-color: white;
+}
+.box {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.language-description {
+    font-size: 18px;
+    line-height: 1;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'verdana', sans-serif;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #adfef9;
+}
+.big-container {
+    display: flex;
+    flex-direction: row;
+    align-items: justify;
+}
+.bigBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+.msuses {
+    
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    font-family: 'OCR A Std', monospace;
+}
+.main-description {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'verdana', sans-serif;
+}
+header {
+    background-color: #000000;
+    padding: 20px;
+    border-top: 1px solid #000000;
+}
+#myheader {
+   margin: 0;
+   /* padding: 0; */
+   box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+#homebutton, #hw1button, #opsysbutton {
+    background-color: transparent;
+    border: 2px solid goldenrod;
+    color: gold;
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

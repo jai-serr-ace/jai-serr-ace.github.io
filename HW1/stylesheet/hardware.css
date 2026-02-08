@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+#homebutton, #hw1button, #opsysbutton {
+    background-color: transparent;
+    border: 2px solid black;
+    color: darkblue;
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+header {
+    background-color: darkcyan;
+    padding: 20px;
+    border-top: 1px solid #000000;
+}
+#myheader {
+   margin: 0;
+   /* padding: 0; */
+   box-sizing: border-box;
+}
+#main-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    color: white;
+
+}
+.subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: goldenrod;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+.mytext {
+    font-size: 18px;
+    line-height: 1;
+    font-family: 'Verdana', sans-serif;
+    margin-left: auto;
+    height: 50%;
+    color :white;
+
+}
+.cpu, .gpu, .ram, .storage, .motherboard, .psu {
+    /* background-color: #000000;
+    padding: 20px; */
+    /* border-radius: 10px;
+    border: 1px solid goldenrod; */
+    width: 80%;
+    margin: 0 auto;
+    margin-left: auto;
+}
+#main-description {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin-top: 20px;
+    color: darkblue;
+}
+.main-list {
+    margin: 0 auto;
+    width: 100%;
+    background-color: black;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0;
+}
+.bottom-text {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Dejavu Sans', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    color :rgb(0, 0, 0);
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid goldenrod;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Dejavu Sans', sans-serif;
+    color: black;
+}
+thead {
+    background-color: darkcyan;
+}

@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+}
+#programbtn, #hw1button, #opsysbutton {
+    background-color: transparent;
+    border: 2px solid goldenrod;
+    color: gold;
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+header {
+    background-color: darkblue;
+    padding: 20px;
+    border-top: 1px solid darkblue ;
+}
+#myheader {
+   margin: 0;
+   /* padding: 0; */
+   box-sizing: border-box;
+}
+#main-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    color: white;
+
+}
+#abstract {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+#abstract-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    word-spacing: 1.5px;
+    line-height: 1.6;
+    color: darkblue;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.image-container {
+    display: flex;
+    gap: 100px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
