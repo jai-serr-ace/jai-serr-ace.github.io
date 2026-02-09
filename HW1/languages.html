@@ -8,16 +8,12 @@
 
 </head>
 <body style="background-color: #f1ecff;">
-    <div>
-    <body id="myheader">
-    <header>
-            <h1 id="main-title"> Programming Languages</h1>
-            <button id="homebutton" onclick="location.href='index.html'">Home</button>
-            <button id="hw1button" onclick="location.href='hardware.html'">Hardware</button>
-            <button id="opsysbutton" onclick="location.href='operatingsys.html'">Operating Systems</button>
+    <header id="myheader">
+        <h1 id="main-title"> Programming Languages</h1>
+        <button id="homebutton" onclick="location.href='index.html'">Home</button>
+        <button id="hw1button" onclick="location.href='hardware.html'">Hardware</button>
+        <button id="opsysbutton" onclick="location.href='operatingsys.html'">Operating Systems</button>
     </header>
-    </body>
-    </div>
     <div class="main-description">
             <p> A <b>Programming Language</b> is a formal language comprising a set of instructions that produce various kinds of output. 
             Programming languages are used in computer programming to implement algorithms.
@@ -29,7 +25,7 @@
     </div>
     <div>
         <!-- Insert some code snippet or code screenshots-->
-         <pre id="samplecode"><code>
+        <pre id="samplecode"><code>
     // Sample C++ code snippet for a simple card game
     struct Card {
     std::string rank;
@@ -45,11 +41,11 @@
 
         void reset() {
             cards.clear();
-            const std::vector<std::string> suits = {"♠", "♥", "♦", "♣"};
-            const std::vector<std::string> ranks = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+            const std::vector&lt;std::string&gt; suits = {"♠", "♥", "♦", "♣"};
+            const std::vector&lt;std::string&gt; ranks = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
 
-            for (const auto& s : suits) {
-                for (const auto& r : ranks) {
+            for (const auto&amp; s : suits) {
+                for (const auto&amp; r : ranks) {
                     int v = 0;
                     if (r == "A") v = 11;
                     else if (r == "J" || r == "Q" || r == "K") v = 10;
@@ -59,7 +55,7 @@
             }
         }
     };
-         </code></pre>
+        </code></pre>
     </div>
     <div class="main-description">
         <!-- Explain C and the C-like programming languages-->
@@ -76,7 +72,7 @@
     <div class ="big-container">
     <div class="container-for-ls bigBox">
         <div class="box">
-            <img src="images/cpplogo.gif" alt="cpp-logo" width="auto" height="200">
+            <img src="images/cpplogo.gif" alt="cpp-logo" height="200">
         </div>
         <!-- explain C++ and add C++ logo-->
         <div class="box">
@@ -88,17 +84,17 @@
         </div>
         <div class="box msuses" style="background-color: lightblue;">
             <h2>Most common uses of C++</h2>
-            <p><ul>
+            <ul>
                 <li>Game Development</li>
                 <li>Systems Programming</li>
                 <li>Embedded Systems</li>
                 <li>High-Performance Applications</li>
-            </ul></p>
+            </ul>
         </div>
     </div>
     <div class="container-for-ls bigBox">
         <div class="box">
-            <img src="images/Java_(programming_language)-Logo.wine.png" alt="java-logo" width="auto" height="200">
+            <img src="images/Java_(programming_language)-Logo.wine.png" alt="java-logo" height="200">
         </div>
         <div class="box">
         <!-- explain Java and add Java logo-->
@@ -109,12 +105,12 @@
         </div>
         <div class="box msuses" style="background-color: gold;">
             <h2>Most common uses of Java</h2>
-            <p><ul>
+            <ul>
                 <li>Enterprise Applications</li>
                 <li>Android Development</li>
                 <li>Web Applications</li>
                 <li>Big Data and Analytics</li>
-            </ul></p>
+            </ul>
         </div>    
     </div>
     <div class="container-for-ls bigBox">
@@ -131,12 +127,12 @@
         </div>
         <div class="box msuses" style="background-color: yellow;">
             <h2>Most common uses of Python</h2>
-            <p><ul>
+            <ul>
                 <li>Web Development</li>
                 <li>Data Science and Machine Learning</li>
                 <li>Automation and Scripting</li>
                 <li>Scientific Computing</li>
-            </ul></p>
+            </ul>
         </div>
     </div>
     </div>
@@ -151,7 +147,7 @@
     </section>
     <div>
         <footer>
-            <img src="images/CSUMB_wordmark_color.png" alt="csumb-logo" width="auto" height="100">
+            <img src="images/CSUMB_wordmark_color.png" alt="csumb-logo" height="100">
             <p>Website created by Serrano Acevedo. Meant to be use only for educational purposes.
                 CSU Monterey Bay, School of Computing and Design, CST 366 - Internet Programming. Spring 2026
                 &copy;CSUMB 2026.
