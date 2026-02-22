@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke Quiz</title>
+    <script src="https://unpkg.com/underscore@1.13.7/underscore-umd-min.js">
+    </script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="quizTitle">Pokemon Quiz</h1>
+    <h2>1. What are is Hoen's fire type starter Pokemon?</h2>
+    <div class="q1-options">
+        <div class="q1-option">
+            <img src="images/treecko.png" alt="Treecko">
+            <label><input type="radio" name="q1" value="treecko">Treecko</label>
+        </div>
+
+        <div class="q1-option">
+            <img src="images/torchic.png" alt="Torchic">
+            <label><input type="radio" name="q1" value="torchic">Torchic</label>
+        </div>
+
+        <div class="q1-option">
+            <img src="images/mudkip.png" alt="Mudkip">
+            <label><input type="radio" name="q1" value="mudkip">Mudkip</label>
+        </div>
+
+        <div class="q1-option">
+            <img src="images/charmander.png" alt="Charmander">
+            <label><input type="radio" name="q1" value="charmander">Charmander</label>
+        </div>
+    </div>
+    <h2 id="q1Answer"></h2>
+    <img name="correctNonCorrect" src="images/placeholder.jpg" alt="RightWrong" height="50" width="auto">
+    <br>
+
+    <h2>2. What is 6th gen region name?</h2>
+    <img src="images/kalos.jpg" alt="Kalos" height="200" width="auto">
+    <input type="text" id="q2">
+    <h2 id="q2Answer"></h2>
+    <img name="q2Logo" src="images/placeholder.jpg" alt="RightWrong" height="50" width="auto">
+    <br>
+
+    <h2>3. What is one of Charizard's types?</h2>
+    <img src="images/charizard.png" alt="Charizard" height="100" width="auto">
+    <select id="selectInput">
+        <option>Options</option>
+        <option value="Flying">Flying</option>
+        <option value="Lightning">Lightning</option>
+        <option value="Fighting">Fighting</option>
+        <option value="Psychic">Psychic</option>
+    </select>
+    <h2 id="q3Answer"></h2>
+    <img name="q3Logo" src="images/placeholder.jpg" alt="RightWrong" height="50" width="auto">
+    <br>
+
+
+    <h2>4. What is the most popular Pokemon?</h2>
+    <div class="q4-options">
+        <div class="q4-option">
+            <span>1.</span>
+            <img src="images/arceus.png" alt="Arceus">
+            <span>Arceus</span>
+        </div>
+        <div class="q4-option">
+            <span>2.</span>
+            <img src="images/pikachu.png" alt="Pikachu">
+            <span>Pikachu</span>
+        </div>
+        <div class="q4-option">
+            <span>3.</span>
+            <img src="images/mewtwo.png" alt="Mewtwo">
+            <span>Mewtwo</span>
+        </div>
+        <div class="q4-option">
+            <span>4.</span>
+            <img src="images/charizard.png" alt="Charizard">
+            <span>Charizard</span>
+        </div>
+    </div>
+    <input type="number" id="q4">
+    <h2 id="q4Answer"></h2>
+    <img name="q4Logo" src="images/placeholder.jpg" alt="RightWrong" height="50" width="auto">
+    <br>
+
+    <h2>5. What are the weaknesses of Pikachu?</h2>
+    <div id="q5ChoicesDiv"></div>
+    <h2 id="q5Answer"></h2>
+    <img name="q5Logo" src="images/placeholder.jpg" alt="RightWrong" height="50" width="auto">
+    <br>
+
+    <h2>Bonus Question. What is the name of the Pokemon with this number? 646</h2>
+    <input type="text" id="bonusQ">
+    <h2 id="bonusQAnswer"></h2>
+    <img name="bonusLogo" src="images/placeholder.jpg" alt="RightWrong" height="50" width="auto">
+    <br>
+    <img name="imgBonus" src="images/kyurem.png" alt="Bonus Pokemon" height="200" width="auto">
+
+    <br>
+    <button>Submit Quiz</button>
+
+    <h2 id="numberOfQuizTaken"></h2>
+
+    <h1 id="finalScore"></h1>
+    <br>
+    <h1 id="finalMessage"></h1>
+    
+</body>
+
+</html>

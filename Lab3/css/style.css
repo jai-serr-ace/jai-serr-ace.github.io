@@ -1,0 +1,43 @@
+#quizTitle {
+    font-family: 'Press Start 2P', cursive;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: blue;
+    font-size: 80%;
+}
+
+.q1-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.q1-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.q1-option img {
+    height: 100px;
+    width: auto;
+}
+
+.q4-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.q4-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.q4-option img {
+    height: 100px;
+    width: auto;
+}
